@@ -5899,11 +5899,13 @@ function loadLocationList() {
   let selectOption = document.createElement("option");
   selectOption.id = "selectOption";
   selectOption.innerText = "Select a State...";
+  selectOption.value = ""
   locationSelect.appendChild(selectOption);
 
   for (const location of locationsArray) {
     let optionList = document.createElement("option");
     optionList.textContent = location;
+    optionList.value = location;
     locationSelect.appendChild(optionList);
   }
 }
@@ -5984,12 +5986,37 @@ function loadParkTypesList() {
   let selectOption = document.createElement("option");
   selectOption.id = "selectOption";
   selectOption.innerText = "Select a Park Type...";
+  selectOption.value = ""
   parkTypesSelect.appendChild(selectOption);
 
   for (const type of parkTypesArray) {
     let optionList = document.createElement("option");
     optionList.textContent = type;
+    optionList.value = type;
     parkTypesSelect.appendChild(optionList);
   }
 }
 loadParkTypesList();
+
+//handling onchange event on any of the radio inputs
+
+function handleSearchTypeChange() {
+  clearParksTable();
+  //get selected radio button
+  let selectedRadio = document.querySelector(
+    "input[name='park-radio']:checked"
+  );
+  //check the value of radio button
+  if (selectedRadio.value == "location") {
+    //hide and show dropdowns
+    // loadLocationList()
+    locationSelect.value = ""
+    locationSelect.style.display = "block"
+    parkTypesSelect.style.display = "none"
+  } else if (selectedRadio.value == "type") {
+    // loadParkTypesList()
+    parkTypesSelect.value = ""
+    parkTypesSelect.style.display = "block"
+    locationSelect.style.display = "none"
+  }
+}
