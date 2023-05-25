@@ -5962,27 +5962,21 @@ function loadParkTableForLocation() {
   }
 }
 
-
 function loadParkTableForParkType() {
   clearParksTable();
 
   let parkType = parkTypesSelect.value;
   let parksInLocations = nationalParksArray.filter(function (park) {
-    return park.LocationName.includes(parkType)
+    return park.LocationName.includes(parkType);
   });
   for (const park of parksInLocations) {
     buildParkRow(parkTableBody, park);
   }
 }
 
-
 function clearParksTable() {
   parkTableBody.innerHTML = "";
 }
-
-
-
-
 
 //loading all the categories
 function loadParkTypesList() {
@@ -5999,10 +5993,3 @@ function loadParkTypesList() {
   }
 }
 loadParkTypesList();
-
-
-
-
-
-
-
