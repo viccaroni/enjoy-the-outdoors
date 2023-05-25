@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Info</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+  />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <header>
+        <div id="header-directory">
+          <a href="index.html"><button>Home</button></a>
+          <a href="national-parks.html"><button>National Parks</button></a>
+          <a href="mountain-info.html"><button>Mountain Info</button></a>
+        </div>
+      </header>
+      <main>
+    <br>
+ <br>
+        <label for="mountains-ddl">MOUNTAINS</label>
+        <select id="mountains-ddl" onclick="loadInfoTable()"></select>
+        <table id="mountain-info-table-head">
+          <thead>
+            <tr>
+              <th>Mountain Name</th>
+              <th>Description</th>
+              <th>Elevation</th>
+              <th>Effort</th>
+              <th>Picture</th>
+            </tr>
+          </thead>
+          <tbody id="mountain-info-table-body"></tbody>
+        </table>
+      </main>
+      <script src="scripts/mountain-info.js"></script>
+</body>
+</html>

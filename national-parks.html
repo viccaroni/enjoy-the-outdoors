@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Parks</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-directory">
+        <a href="index.html"><button>Home</button></a>
+        <a href="national-parks.html"><button>National Parks</button></a>
+        <a href="mountain-info.html"><button>Mountain Info</button></a>
+      </div>
+    </header>
+    <main>
+      <br />
+      <div id="radio-div">
+      <input type="radio" name="park-location-radio" id="park-location-radio" />
+      <label for="park-location-radio">By Location</label>
+      <input type="radio" name="park-type-radio" id="park-type-radio" />
+      <label for="park-type-radio">By Type</label>
+    </div>
+    
+      <br />
+      <label for="locations-ddl">PARK LOCATIONS</label>
+      <select id="locations-ddl" onchange="loadParkTableForLocation();"></select>
+
+
+      <label for="park-type-ddl">PARK TYPES</label>
+      <select id="park-type-ddl" onchange="loadParkTableForParkType();"></select>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody id="park-table-body"></tbody>
+      </table>
+
+      
+     
+    </main>
+    <script src="/scripts/national-parks.js"></script>
+  </body>
+</html>

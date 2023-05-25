@@ -1,0 +1,18 @@
+body{
+  font-family: "Varela Round", sans-serif;
+}
+
+#heading {
+  text-align: center;
+}
+#main-center {
+  text-align: center;
+  font-size:xx-large;
+}
+#background-body {
+  background-image: url("/images/grand-prismatic-pool-at-yellowstone-national-park.jpg");
+}
+#header-directory{
+  text-align: center;
+  font-size: xx-large;
+}
