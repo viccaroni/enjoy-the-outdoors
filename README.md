@@ -1,4 +1,4 @@
-# enjoy-the-outdoors
+# Enjoy-the-outdoors
 A simple website made for users to search for national parks in different states
 ---
 I used a css framework called "water css" for my styling, I know I should've used some bootstrap but I had liked the minimal look of the site and i didnt have time to do all the bootstrap styling
