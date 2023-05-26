@@ -5921,7 +5921,10 @@ function buildParkRow(tbody, thePark) {
 
   let cell2 = document.createElement("td");
   row.appendChild(cell2);
-  cell2.innerText = thePark.Address;
+  if (thePark.Address) {
+    cell2.innerText = thePark.Address;
+  }
+
 
   let cell3 = document.createElement("td");
   row.appendChild(cell3);
@@ -5933,7 +5936,10 @@ function buildParkRow(tbody, thePark) {
 
   let cell5 = document.createElement("td");
   row.appendChild(cell5);
-  cell5.innerText = thePark.ZipCode;
+  if (thePark.ZipCode) {
+    cell5.innerText = thePark.ZipCode;
+  }
+
 
   let cell6 = document.createElement("td");
   row.appendChild(cell6);
