@@ -9,7 +9,7 @@ https://github.com/viccaroni/enjoy-the-outdoors.git
 ```
 # Home Page
 ![image](https://github.com/viccaroni/enjoy-the-outdoors/assets/130574380/d0fdd2a7-15d8-456b-98f1-4f116a866ec8)
-The favourite part of my website, the home page. I randomly picked the name "Enchanted Eden" just for a placeholder name but after some positive feedback about the name being nice I kept it
+The favourite part of my website, the home page. I randomly picked the name "Enchanted Eden" just for a placeholder name but after some positive feedback from some friends about the name being nice I kept it.
 The background image is the Grand Prismatic Spring that lives in Yellowstone. My idea for this image choice was that the website is about national parks and Yellowstone is a national park that I have also been to and the Grand Prismatic Spring was my favourite part of being at the park and hiking around.
 ---
 # National Parks Page
